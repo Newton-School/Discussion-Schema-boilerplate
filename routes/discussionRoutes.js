@@ -1,9 +1,9 @@
 const express = require("express");
 
-const { getalldiscussion } = require("../controllers/discussionControllers");
+const { getAllDiscussion } = require("../controllers/discussionControllers");
 
 const router = express.Router();
 
-router.get("/", getalldiscussion);
+router.get("/", getAllDiscussion);
 
 module.exports = router;

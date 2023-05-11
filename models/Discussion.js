@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 */
 
 const discussionSchema = mongoose.Schema({
-  
+  //Write your code here.
 });
 
 module.exports = mongoose.model("Discussion", discussionSchema);

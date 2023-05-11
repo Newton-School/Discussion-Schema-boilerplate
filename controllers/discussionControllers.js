@@ -1,14 +1,14 @@
-const Discussion   = require("../models/Discussion.js");
+const Discussion   = require("../models/discussion.js");
 
 
-const getalldiscussion =async (req, res) => {
+const getAllDiscussion =async (req, res) => {
 
-    const all_discussion = await Discussion.find({});
+    const allDiscussion = await Discussion.find({});
     res.status(200).json({
-        "status": "success",
-        "data": all_discussion
+        status: "success",
+        data: allDiscussion
     })
-   
+
 }
 
-module.exports = { getalldiscussion };
+module.exports = { getAllDiscussion };
